@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <link href="patient_screen.css" rel="stylesheet">
+  <title>W Health Ventures</title>
+</head>
+
+<body>
+  <div id="root">
+    <!-- side navbar  -->
+    <div class=" w-100 d-flex ">
+      <div class=" d-flex pt-lg-3 bg-white " style=" width: 16%;">
+        <div class=" d-flex flex-column  sticky-bottom sticky-top ">
+          <!-- site side bar logo -->
+          <div class="w-100 p-3 my-1">
+            <img src="Image/whealth_logo.svg" class="d-none d-md-block card-img-top logo " alt="...">
+            <svg class="d-md-none w-100" width="32" height="19" viewBox="0 0 32 19" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.1975 18.5788C8.13846 18.576 6.42583 17.1266 6.09786 15.1749C5.93112 14.1805 6.10339 13.25 6.59995 12.3768C8.08963 9.75904 9.57931 7.1404 11.069 4.52175C11.5269 3.71609 11.9792 2.90765 12.4435 2.10661C13.1446 0.897645 14.1884 0.192803 15.5758 0.0281551C17.5943 -0.211417 19.4847 1.10947 19.984 3.09542C20.1968 3.94086 20.9329 4.54858 21.798 4.55135C22.6041 4.55413 23.1799 4.16286 23.5696 3.45432C23.9206 2.81515 24.2614 2.16118 24.6898 1.57659C25.3642 0.658073 26.314 0.163204 27.4453 0.0281551C29.4832 -0.215117 31.4841 1.13814 31.9162 3.31094C32.1143 4.30531 31.9613 5.25712 31.4593 6.14233C30.2736 8.23466 29.0833 10.3251 27.8949 12.4165C27.1395 13.7457 26.3803 15.0731 25.6295 16.4051C24.9644 17.5854 23.9731 18.3161 22.64 18.527C20.4889 18.8665 18.5063 17.4827 18.0236 15.3996C17.7785 14.3424 17.9398 13.3406 18.4722 12.399C18.814 11.7949 19.1604 11.1946 19.5068 10.5934C19.8007 10.0819 19.6247 9.42327 19.1144 9.12727C18.5966 8.82665 17.9453 9.00425 17.6468 9.52964C16.4188 11.6932 15.1926 13.8567 13.9645 16.0203C13.6918 16.5004 13.4265 16.9832 13.0257 17.3763C12.2178 18.1681 11.2486 18.5612 10.1956 18.5807L10.1975 18.5788Z"
+                fill="#3C57A1" />
+              <path
+                d="M1.39321e-06 4.10363C0.00184391 1.82816 1.83239 -0.000544031 4.10422 0.00223094C6.37789 0.00500591 8.20751 1.85313 8.18725 4.15636C8.16698 6.41888 6.34565 8.21521 4.07934 8.21891C1.8241 8.22261 -0.00184113 6.37448 1.39321e-06 4.10363Z"
+                fill="#3C57A1" />
+            </svg>
+
+          </div>
+          <div class="line1"></div>
+          <!-- list of side bar -->
+          <ul class=" w-100  nav nav-pills d-flex nav-justified  flex-column">
+            <li class="nav-item w-100 ">
+              <div class="nav-link  text-start">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-grid text-black side-icon" viewBox="0 0 16 16">
+                  <path
+                    d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+                </svg>
+                <a class="text-dark sidebartext " href="#">Home</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="nav-link active text-start">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-person text-black side-icon" viewBox="0 0 16 16">
+                  <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                </svg>
+                <a class="text-dark sidebartext " aria-current="page" href="#">Patient</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="nav-link text-start">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-file-earmark-text text-black side-icon" viewBox="0 0 16 16">
+                  <path
+                    d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z" />
+                  <path
+                    d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z" />
+                </svg>
+                <a class="text-dark sidebartext " href="#">Article</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="nav-link text-start">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-people text-black side-icon" viewBox="0 0 16 16">
+                  <path
+                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                </svg>
+                <a class="text-dark sidebartext " href="#">Team</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="nav-link text-start">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-gear text-black side-icon" viewBox="0 0 16 16">
+                  <path
+                    d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                  <path
+                    d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+                </svg>
+                <a class="text-dark sidebartext " href="#">Setting</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- main body  -->
+      <div class="patient-body  h-100" style="width: 84%; ">
+        <!-- header   -->
+        <div class=" col-lg-6 col-md-12 w-100 d-flex p-3 ">
+          <div class="container  pt-1 d-flex" style=" height: 40x;
+                    gap: 10px; ">
+            <img src="Image/header_pacent_logo.svg" alt="Logo" style=" height: 24px; width: 24px;">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item d-flex  "><a>Home</a></li>
+                <li class="breadcrumb-item d-flex " aria-current="page">Library</li>
+              </ol>
+            </nav>
+          </div>
+          <div>
+            <img class="rounded-circle" src="image/user_image.png" style="height: 46px;">
+          </div>
+        </div>
+        <!--contant-body  -->
+        <div class=" d-lg-flex w-100 contant-body col-lg-6 col-md-12 ">
+          <!-- profile box  -->
+          <div class="px-4 main-contant row-cols-1 row-cols-md-2 ">
+            <div class=" w-100  profileBox d-flex col-lg-6 col-md-12 mt-2 mx-1 pt-3 ">
+              <div class=" userprofile h-100 d-flex">
+                <div class=" d-flex w-100  ">
+                  <div class="card w-100 " style=" margin-right: 10px ;">
+                    <div class="row g-0">
+                      <div class="col-md-3">
+                        <img src="Image/profile_image.png" class="img-fluid m-2 rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-9">
+                        <div class="card-body">
+                          <h5 class="card-title">rajat</h5>
+                          <p class="card-text"> 17yr,male</p>
+                          <p class="card-text">
+                            <small class="">
+                              <div>
+                                <a href="#" class="nav-link">
+                                  <img src="Image/Whatsapp_37229.png" style="width: 20px; ">
+                                  8696440479
+                                </a>
+                              </div>
+                              <div>
+                                <a href="#" class="nav-link">
+                                  <img src="Image/gmail.png" style="width: 18px; ">
+                                  rajat1ggc@gmail.com
+                                </a>
+                              </div>
+                            </small>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="onbording">
+                <div class=" w-100  h-100 card d-flex">
+                  <div class="card-body ">
+                    <div class="d-flex ">
+                      <span class="badge rounded-pill text-bg-primary">onboarding</span>
+                    </div>
+                    <div class="d-lg-flex flex-column ">
+                      <p class=" card-subtitle text-muted mt-2">Member Since</p>
+                      <p class="card-text ">Card subtitle</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- body navBar  -->
+            <div class="card w-100 rounded-0 text-center mx-1 mt-2 ">
+              <div class="card-header border-0 bg-white col-md-12">
+                <ul class="nav nav-pills card-header-pills">
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Timeline
+                    </a>
+                  </li>
+                  <li class="nav-item " aria-current="page">
+                    <a class="nav-link" href="#">Health Profile
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Prescription
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Goal
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Reports</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Notes
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-body w-100 d-flex">
+                        <div class=" ">
+                          <div class="card-title d-flex fw-bold" style="color: #ec6330;">
+                            <img src="image/fire-contant-box1.png" style="width: 14px; padding-bottom: 7px;">
+                            Active Energy
+                          </div>
+                          <div class=" d-flex flex-column">
+                            <div class="align-self-start">Energy level has increased</div>
+                            <div class="align-self-start">significantly</div>
+                          </div>
+                        </div>
+                        <div class="ms-auto d-flex">
+                          <h5 class="card-title m-1">99</h5>
+                          <div class="graph-unit m-1">kcal</div>
+                        </div>
+                      </div>
+                      <img src="Image/graph-1.jpeg" class="card-img-top d-flex " alt="...">
+                      <div class="d-flex justify-content-center">
+                        <div class="btn-group w-100" role="group" aria-label="btn">
+                          <button type="button" class="btn btn-light">D</button>
+                          <button type="button" class="btn btn-light">W</button>
+                          <button type="button" class="btn btn-light">M</button>
+                          <button type="button" class="btn btn-light ">6M</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-body w-100 d-flex">
+                        <div class=" ">
+                          <div class="card-title d-flex fw-bold" style="color: #57b3f4;">
+                            <img src="image/water.png" style="width: 14px; padding-bottom: 7px;">
+                            Active Energy
+                          </div>
+                          <div class=" d-flex flex-column">
+                            <div class="align-self-start">Energy level has increased</div>
+                            <div class="align-self-start">significantly</div>
+                          </div>
+                        </div>
+                        <div class="ms-auto">
+                          <h5 class="card-title m-1">22</h5>
+                        </div>
+                        <div class="graph-unit m-1">%</div>
+                      </div>
+                      <img src="Image/water-quantity-removebg-preview.png" class="card-img-top" alt="...">
+                      <div class="d-flex justify-content-center">
+                        <div class="btn-group w-100" role="group" aria-label="btn">
+                          <button type="button" class="btn btn-light">D</button>
+                          <button type="button" class="btn btn-light">W</button>
+                          <button type="button" class="btn btn-light">M</button>
+                          <button type="button" class="btn btn-light ">6M</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-body w-100 d-flex">
+                        <div class=" ">
+                          <div class="card-title d-flex fw-bold" style="color: #eb4b62;">
+                            <img src="image/heart.png" style="width: 14px; padding-bottom: 7px;">
+                            Blood Pressure
+                          </div>
+                          <div class=" d-flex flex-column">
+                            <div class="align-self-start">Energy level has increased</div>
+                            <div class="align-self-start">significantly</div>
+                          </div>
+                        </div>
+                        <div class="ms-auto">
+                          <h5 class="card-title m-1">99</h5>
+                        </div>
+                        <div class="graph-unit m-1">ms</div>
+                      </div>
+                      <img src="Image/graph-1.jpeg" class="card-img-top" alt="...">
+                      <div class="d-flex justify-content-center">
+                        <div class="btn-group w-100" role="group" aria-label="btn">
+                          <button type="button" class="btn btn-light">D</button>
+                          <button type="button" class="btn btn-light">W</button>
+                          <button type="button" class="btn btn-light">M</button>
+                          <button type="button" class="btn btn-light ">6M</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-body w-100 d-flex">
+                        <div class=" ">
+                          <div class="card-title d-flex fw-bold" style="color: #eb4b62;">
+                            <img src="image/heart.png" style="width: 14px; padding-bottom: 7px;">
+                            Heart Rate Variability
+                          </div>
+                          <div class=" d-flex flex-column">
+                            <div class="align-self-start">Energy level has increased</div>
+                            <div class="align-self-start">significantly</div>
+                          </div>
+                        </div>
+                        <div class="ms-auto">
+                          <h5 class="card-title m-1">99</h5>
+                        </div>
+                        <div class="graph-unit m-1">ms</div>
+                      </div>
+                      <img src="Image/graph-1.jpeg" class="card-img-top" alt="...">
+                      <div class="d-flex justify-content-center">
+                        <div class="btn-group w-100" role="group" aria-label="btn">
+                          <button type="button" class="btn btn-light">D</button>
+                          <button type="button" class="btn btn-light">W</button>
+                          <button type="button" class="btn btn-light">M</button>
+                          <button type="button" class="btn btn-light ">6M</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- right side box  -->
+          <div class=" row mt-3 d-lg-flex flex-column mx-2 row-col-lg-6 row-col-md-12">
+            <!-- right side first box  -->
+            <div class=" d-flex  mt-2 card  ">
+              <div class=" d-lg-flex justify-content-around p-3 ">
+                <span class=" badge rounded-pill text-bg-light p-1 ">
+                  <img src="image/profile_image.png" style="height: 25px; ">
+                  Ankit
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" fill="currentColor" class="bi bi-x-circle-fill"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                  </svg>
+                </span>
+                <span class=" badge rounded-pill text-bg-light">
+                  <img src="image/profile_image.png" style="height: 21px; gap: 10px;">
+                  Ankit
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                  </svg>
+                </span>
+              </div>
+              <div class="linesView">
+                <div class="assign-text-box m-2">
+                  <div class="dropDownItemCustom">
+                    <div class="inputFieldHeader">
+                      <div></div>
+                      <div class="inputDetailsDiv"></div>
+                    </div>
+                    <div class="inputParent">
+                      <div class="d-flex leftIcon" id="leftIcon">
+                      </div>
+                      <div class="d-flex justify-content-around ">
+                        <div>
+                          <img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFCSURBVHgBzZJPToNAFMbfY+qfRRdE3MsRSEyJS3oCuYF1WRPT9ATACawxtMvqDXoD6E4bFxyBAzRmltbAPN/EtFWEaNzYL4F5vMz3y8z3APhvYbVx5E4CBOpxaQORBMOYlavXSGbD/EeA1Rkn3PGAICWkOQLa3L7gJy/fVt06SGtrjnvajAjD5eJqtO6bZ5PQUJSIvcMpf3arAGNdEOKAX+nyaWvWko/9HJS6BSTP7MROI4Dv4hCqOdRItcRMr4L3NJ9AB4bGSR2gVRS2XktSeSOA9YBEvunc2NVNhCIgDlI+X6ff4JtjCmPEYZ2L/YOEA41KgEwg8ihh8BEu3kONvoyRE7d14qj/gU9XY3PKpU+A4cuiHzUCNiBOWyhl80hl0W5nMr2Ux24cMiCog/xaGmK5Y7JO73z4q7TZ9KYm7IzeAUGEeWDJgeK3AAAAAElFTkSuQmCC">
+                        </div>
+                        <input class="form-control  coreInput inputPaddingRight  undefined "
+                          placeholder="Assign Doctor/Health Coach" style="height: 36px; padding-left: 20px;">
+                        </input>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                          class="bi bi-x-circle-fill rightIcon" viewBox="0 0 16 16" style="cursor: pointer;">
+                          <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- right side second box  -->
+            <div class="card  w-100 mt-1 p-2">
+              <div class="card-body d-flex flex-column  ">
+                <div class=" mb-2">
+                  <p class="card-text text-center">Last update: Dec 15, 2022
+                  </p>
+                </div>
+                <hr class="border border-secondary border-2 opacity-50">
+                <div class="w-100 d-sm-flex ">
+                  <div class="w-100 text-center">
+                    <div class="p-2">
+                      <span class="badge rounded-pill text-bg-success">Current BMI</span>
+                    </div>
+                    <div class="p-2">
+                      30.0 , 98k.g.
+                    </div>
+                    <div class="p-2">
+                      <span class="badge rounded-pill text-bg-light">Current Shape</span>
+                    </div>
+                    <div class="p-2">
+                      Oval
+                    </div>
+                    <div class="p-2">
+                      <span class="badge rounded-pill text-bg-danger">Suger level</span>
+                    </div>
+                    <div class="p-2">
+                      99 mg/dl
+                    </div>
+                  </div>
+                  <div class="w-100 text-center">
+                    <div class="p-2">
+                      <span class="badge rounded-pill text-bg-secondary">Starting BMI</span>
+                    </div>
+                    <div class="p-2">
+                      30.0 , 98k.g.
+                    </div>
+                    <div class="p-2">
+                      <span class="badge rounded-pill text-bg-light">height</span>
+                    </div>
+                    <div class="p-2">
+                      5'8Inch
+                    </div>
+                    <div class="p-2">
+                      <span class="badge rounded-pill text-bg-light">Blood Pressure</span>
+                    </div>
+                    <div class="p-2">
+                      120/80 mmHg
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- third box  -->
+            <div class="card w-100 mt-1">
+              <div class="card-body ">
+                <div class="w-100 d-lg-flex  ">
+                  <div class="w-100 d-lg-flex flex-column">
+                    <h5 class="card-title">Weight Graph</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">-18 k.g</h6>
+                  </div>
+                  <div class="w-100">
+                    <div class="col-auto">
+                      <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                      <select class="form-select" id="autoSizingSelect">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-100">
+                  <img src="Image/candle-graph.png" class="card-img-bottom" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+:root {
+  --body-background-color: #a9b2b9;
+  --side-navBar-backgrd-color: #e9efff;
+  --active-text-color: #23449e;
+}
+
+@media (max-width: 660px) {
+  .sidebartext {
+    display: none;
+  }
+  .side-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .side-icon {
+    width: 100%;
+  }
+}
+@media (max-width: 780px) {
+  .profileBox {
+    display: flex;
+    flex-direction: column;
+  }
+  .userprofile {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 780px) {
+  .userprofile {
+    width: 75%;
+  }
+  .onbording {
+    width: 25%;
+  }
+}
+
+/* @media{
+    main-contant
+    rightsidebox
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contant-body {
+  background-color: var(--body-background-color);
+  height: 100%;
+}
+
+.line1 {
+  margin: 15px;
+  height: 1px;
+  max-width: 100%;
+  background: repeating-linear-gradient(90deg, rgb(0, 0, 0) 0 3px, #0000 0 7px);
+}
+
+.active {
+  background-color: var(--side-navBar-backgrd-color) !important ;
+  color: var(--active-text-color) !important ;
+}

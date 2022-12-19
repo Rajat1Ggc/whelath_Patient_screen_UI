@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="patient_screen.css" rel="stylesheet">
+    <title>W Health Ventures</title>
+
+</head>
+
+<body>
+    <div id="root">
+
+        <!-- side navbar  -->
+        <div class=" w-100 d-flex ">
+
+            <div class=" card  d-flex pt-lg-3 bg-white " style=" width: 16%;">
+
+                <div class=" d-flex flex-column  sticky-bottom sticky-top ">
+                    <div class="w-100 p-3 my-2">
+                        <img src="Image/whealth_logo.svg" class="card-img-top logo " alt="...">
+                    </div>
+                    <div class="line1"></div>
+                    <ul class=" w-100 row d-flex  nav nav-pills d-flex nav-justified  flex-column">
+                        <li class="nav-item ">
+                            <div class="nav-link  text-start">
+                                <img src="image/Home_sidebar_logo.svg">
+
+                                <a class="text-dark" href="#">Home</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link active text-start">
+                                <img src="image/paisent_sidebar_logo.svg">
+                                <a class="text-dark" aria-current="page" href="#">Patient</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link text-start">
+                                <img src="image/article_sidebar_logo.svg">
+                                <a class="text-dark" href="#">Article</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link text-start">
+                                <img src="image/team_sidebar_logo.svg">
+                                <a class="text-dark" href="#">Team</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link text-start">
+                                <img src="image/setting_sidebar_logo.svg">
+                                <a class="text-dark" href="#">Setting</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+
+            <!-- main body  -->
+            <div class="patient-body  h-100" style="width: 84%;">
+                <!-- header   -->
+                <div class=" col-lg-6 col-md-12 w-100 d-flex " style="  height: 70px; padding: 15px 24px ; ">
+                    <div class="container-sm d-flex" style=" height: 40x;
+                    gap: 10px; ">
+                        <img src="Image/header_pacent_logo.svg" alt="Logo" style=" height: 24px; width: 24px;">
+
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item d-flex  "><a>Home</a></li>
+                                <li class="breadcrumb-item d-flex " aria-current="page">Library</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div>
+                        <img class="rounded-circle" src="image/user_image.png" style="height: 46px;">
+                    </div>
+                </div>
+
+
+                <!--contant-body  -->
+                <div class="d-flex w-100 contant-body col-lg-6 col-md-12 ">
+
+                    <!-- profile box  -->
+                    <div class=" px-4  row row-cols-1 row-cols-md-2 w-75">
+                        <div class=" w-100  d-flex col-lg-6 col-md-12 mt-2 p-3 ">
+
+                            <div class="w-75 d-flex">
+                                <div class=" d-flex w-100">
+                                    <div class="card w-100 mb-0" style="margin-right: 10px ;">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="Image/profile_image.png" class="img-fluid m-2 rounded-start"
+                                                    alt="...">
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">rajat</h5>
+                                                    <p class="card-text"> 17yr,male</p>
+                                                    <p class="card-text">
+                                                        <small class="text-muted">
+                                                            <div>
+                                                                <a href="#" class="nav-link">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                        height="16" fill="currentColor"
+                                                                        class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                                                                    </svg> 8696440479
+                                                                </a>
+                                                            </div>
+                                                            <div>
+                                                                <a href="#" class="nav-link">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                        height="16" fill="currentColor"
+                                                                        class="bi bi-envelope-at-fill"
+                                                                        viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z" />
+                                                                        <path
+                                                                            d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z" />
+                                                                    </svg>
+                                                                    rajat1ggc@gmail.com
+                                                                </a>
+
+                                                            </div>
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w-25">
+                                <div class=" w-100 card d-flex">
+                                    <div class="card-body">
+                                        <div>
+                                            <span class="badge rounded-pill text-bg-primary">Primary</span>
+                                        </div>
+                                        <div>
+                                            <p class=" card-subtitle text-muted mt-2">Member Since</p>
+                                            <p class="card-text ">Card subtitle</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- body navBar  -->
+                        <div class="card w-100 text-center  mt-2 p-3">
+                            <div class="card-header  col-md-12">
+                                <ul class="nav nav-pills card-header-pills">
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#">Timeline
+                                        </a>
+                                    </li>
+                                    <li class="nav-item " aria-current="page">
+                                        <a class="nav-link" href="#">Health Profile
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled" href="#">Prescription
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled">Goal
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled">Reports</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled">Notes
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <div class="row row-cols-1 row-cols-md-2 g-4">
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body w-100 d-flex">
+                                                <div class=" ">
+                                                    <div class="card-title d-flex fw-bold" style="color: #ec6330;">
+                                                        <img src="image/fire-contant-box1.png"
+                                                            style="width: 14px; padding-bottom: 7px;">
+                                                        Active Energy
+                                                    </div>
+                                                    <div class="align-self-start">Energy level has increased
+                                                        <br>significantly
+                                                    </div>
+                                                </div>
+
+                                                <div class="ms-auto">
+                                                    <h5 class="card-title">99</h5>
+                                                </div>
+                                                <div class="graph-unit m-1">kcal</div>
+                                            </div>
+                                            <img src="Image/graph-1.jpeg" class="card-img-top" alt="...">
+
+                                            <div class="d-flex justify-content-center">
+                                                <div class="btn-group w-100" role="group" aria-label="btn">
+                                                    <button type="button" class="btn btn-light">D</button>
+                                                    <button type="button" class="btn btn-light">W</button>
+                                                    <button type="button" class="btn btn-light">M</button>
+                                                    <button type="button" class="btn btn-light ">6M</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body w-100 d-flex">
+                                                <div class=" ">
+                                                    <div class="card-title d-flex fw-bold" style="color: #ec6330;">
+                                                        <img src="image/fire-contant-box1.png"
+                                                            style="width: 14px; padding-bottom: 7px;">
+                                                        Active Energy
+                                                    </div>
+                                                    <div class="align-self-start">Energy level has increased
+                                                        <br>significantly
+                                                    </div>
+                                                </div>
+
+                                                <div class="ms-auto">
+                                                    <h5 class="card-title">99</h5>
+                                                </div>
+                                                <div class="graph-unit m-1">kcal</div>
+                                            </div>
+                                            <img src="Image/graph-1.jpeg" class="card-img-top" alt="...">
+
+                                            <div class="d-flex justify-content-center">
+                                                <div class="btn-group w-100" role="group" aria-label="btn">
+                                                    <button type="button" class="btn btn-light">D</button>
+                                                    <button type="button" class="btn btn-light">W</button>
+                                                    <button type="button" class="btn btn-light">M</button>
+                                                    <button type="button" class="btn btn-light ">6M</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body w-100 d-flex">
+                                                <div class=" ">
+                                                    <div class="card-title d-flex fw-bold" style="color: #ec6330;">
+                                                        <img src="image/fire-contant-box1.png"
+                                                            style="width: 14px; padding-bottom: 7px;">
+                                                        Active Energy
+                                                    </div>
+                                                    <div class="align-self-start">Energy level has increased
+                                                        <br>significantly
+                                                    </div>
+                                                </div>
+
+                                                <div class="ms-auto">
+                                                    <h5 class="card-title">99</h5>
+                                                </div>
+                                                <div class="graph-unit m-1">kcal</div>
+                                            </div>
+                                            <img src="Image/graph-1.jpeg" class="card-img-top" alt="...">
+
+                                            <div class="d-flex justify-content-center">
+                                                <div class="btn-group w-100" role="group" aria-label="btn">
+                                                    <button type="button" class="btn btn-light">D</button>
+                                                    <button type="button" class="btn btn-light">W</button>
+                                                    <button type="button" class="btn btn-light">M</button>
+                                                    <button type="button" class="btn btn-light ">6M</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-body w-100 d-flex">
+                                                <div class=" ">
+                                                    <div class="card-title d-flex fw-bold" style="color: #ec6330;">
+                                                        <img src="image/fire-contant-box1.png"
+                                                            style="width: 14px; padding-bottom: 7px;">
+                                                        Active Energy
+                                                    </div>
+                                                    <div class="align-self-start">Energy level has increased
+                                                        <br>significantly
+                                                    </div>
+                                                </div>
+
+                                                <div class="ms-auto">
+                                                    <h5 class="card-title">99</h5>
+                                                </div>
+                                                <div class="graph-unit m-1">kcal</div>
+                                            </div>
+                                            <img src="Image/graph-1.jpeg" class="card-img-top" alt="...">
+
+                                            <div class="d-flex justify-content-center">
+                                                <div class="btn-group w-100" role="group" aria-label="btn">
+                                                    <button type="button" class="btn btn-light">D</button>
+                                                    <button type="button" class="btn btn-light">W</button>
+                                                    <button type="button" class="btn btn-light">M</button>
+                                                    <button type="button" class="btn btn-light ">6M</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- right side box  -->
+                    <div class=" w-25  flex flex-column col-lg-6 col-md-12">
+
+                        <!-- right side first box  -->
+
+                        <div class=" d-flex  mt-2 card w-100 p-3 bg-light ">
+                            <div>
+                                <span class=" badge rounded-pill text-bg-light">
+                                    <img src="image/profile_image.png" style="height: 21px; gap: 10px;">
+                                    Ankit
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                                    </svg>
+                                </span>
+                                <span class=" badge rounded-pill text-bg-light">
+                                    <img src="image/profile_image.png" style="height: 21px; gap: 10px;">
+                                    Ankit
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                                    </svg>
+                                </span>
+
+                            </div>
+
+
+
+
+
+
+
+                            <div class="linesView">
+                                <div class="assign-text-box m-2">
+                                    <div class="dropDownItemCustom">
+                                        <div class="inputFieldHeader">
+                                            <div></div>
+                                            <div class="inputDetailsDiv"></div>
+                                        </div>
+                                        <div class="inputParent">
+                                            <div class="d-flex leftIcon" id="leftIcon">
+                                                <div>
+                                                    <img
+                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFCSURBVHgBzZJPToNAFMbfY+qfRRdE3MsRSEyJS3oCuYF1WRPT9ATACawxtMvqDXoD6E4bFxyBAzRmltbAPN/EtFWEaNzYL4F5vMz3y8z3APhvYbVx5E4CBOpxaQORBMOYlavXSGbD/EeA1Rkn3PGAICWkOQLa3L7gJy/fVt06SGtrjnvajAjD5eJqtO6bZ5PQUJSIvcMpf3arAGNdEOKAX+nyaWvWko/9HJS6BSTP7MROI4Dv4hCqOdRItcRMr4L3NJ9AB4bGSR2gVRS2XktSeSOA9YBEvunc2NVNhCIgDlI+X6ff4JtjCmPEYZ2L/YOEA41KgEwg8ihh8BEu3kONvoyRE7d14qj/gU9XY3PKpU+A4cuiHzUCNiBOWyhl80hl0W5nMr2Ux24cMiCog/xaGmK5Y7JO73z4q7TZ9KYm7IzeAUGEeWDJgeK3AAAAAElFTkSuQmCC">
+                                                </div>
+                                            </div><input class="form-control coreInput inputPaddingRight  undefined "
+                                                placeholder="Assign Doctor/Health Coach" value="" fdprocessedid="hcvgjm"
+                                                style="height: 36px; padding-left: 30px;">
+                                            <div class="rightIcon" style="cursor: pointer;">
+                                                <img
+                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPlSURBVHgBzZpdbtpAEIBn1qbP9AbkBCEnaHKD9D1/SFCpDxVwgpATEJpKVUokiEif0xskOUHJCUJuwHOxdzprageMf3aNof4khLz4Z8Yzu/OzIORAdzAow8w6tCyxCy5VCLAKSGX+qRycRDhBpAkIHLuufAbXfWx/rk1gTRAyooS2HbtJAPvqA5nAsSTZW0cZYwV8wSVACxbf8Jog4tCdzS5MFTFS4Ko/Os9b8DACoPOlcXyhe76WAt3vg4qwS/fsyFXYBogTOZsd6FhDpJ3w7ebuVNj2760JryCqqGd2b0aHaacmKnDV/3nuEg1hgy6TQFkQ3Cu3TTop1oWU8BJkBwpA0ryIVECZTmkPRQLxrFk/ul0ZDg/MJ6zy+f/iNklMpePshSf2yhwQVukBiie8ojxfCZdZUkD5PacAFSgsVO1e33YWRwIX+uc6L1B8ptJ2dtq12lQdBBawSqVzk7tIhJ4kqnFkvoWMEKcPGe5Rhj+i5R94FjB9++rBrfpRzT/u9kcdfhNmLwDkRbtx2gnucTO65JWvqXl5YIW5BSxrHwwgKZ8Wj9uN4w6/Re38JSz8fJDGoE9gBU8BIVBXcw9LiA/hMV0lIoWPuaeODJh18sZFxyR3ihM+a9RnN3ovTN3nTRjoROUpcZbIW3gPrgLFOlmmrhIbEd4Dq8JCrmPXIE2JzQmvoAr2fty95BF9TSqp3DJdLnxEXqlDnCXC5JqmE5VTKzIT0pTYQI2RrwIKRyUZGX7LilqFppATcRPWxzRi6yCARC4KpAnvk6sSahKjMMpBIklaKk2CnSlENBGulK+wBmnrvGnENoEInoXqT0JGdIPU5pSgsYCS+wsyYBphN6IEN4W9Ze1rf/Rg0mEOFzQ+Out8QhY75N9OQZ9xs3G858UBV8KTwYUrBY1CN0jFBjuiRzCAS9Ge+p4HsnfOpUk8CCeAphE2SgnTgka5j/p660pccyEi9Otar5/PllAP5uXsDDIQ3ANhl3d1WrrXLbrwmwK8cSEciyszLGJTawnu0O34HbogF1IVvpTYg4LjrX4L7cWV5KrXH6m+6Pb2AkzgTcJm/WRncWglG2XzfMwzwcsPmsqZexAeXVFAmUcStKFgSMRa1JZTZD3Q/nQyzDvtXQfP7+vHkRlDYoGRpWWYN2lpemqFNN+tocH2l1f2eXZl5Q1JZ+lvs1rWA0eeCmyHsVpMdLZZjWrUzbsUv3XAnspQda8w/6sBWwNsu2OYOaYwFxxs59LfuNAl+589lCLcV+V8pokZAx+n8I/8ecoiuE8ubQ5fGRBYRYJdzrYquNQwoyl5zQMak4BXby+AC6msQi/yF/BqTx89wZCwAAAAAElFTkSuQmCC">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- right side second box  -->
+                        <div class="card w-100 d-flex mt-2" style="">
+                            <div class="card-body ">
+                                <div>
+                                    <p class="card-text">Last update: Dec 15, 2022
+                                    </p>
+                                </div>
+
+                                <div class="w-100 d-flex">
+
+                                    <div class="w-50">
+                                        <div>
+                                            <span class="badge rounded-pill text-bg-success">Success</span>
+                                        </div>
+                                        <div>
+                                            30.0 , 98k.g.
+                                        </div>
+                                        <div>
+                                            <span class="badge rounded-pill text-bg-light">Light</span>
+                                        </div>
+                                        <div>
+                                            Oval
+                                        </div>
+                                        <div>
+                                            <span class="badge rounded-pill text-bg-danger">Danger</span>
+                                        </div>
+                                        <div>
+                                            99 mg/dl
+                                        </div>
+                                    </div>
+
+                                    <div class="w-50">
+                                        <div>
+                                            <span class="badge rounded-pill text-bg-secondary">Secondary</span>
+                                        </div>
+                                        <div>
+                                            30.0 , 98k.g.
+
+                                        </div>
+                                        <div>
+                                            <span class="badge rounded-pill text-bg-light">Light</span>
+                                        </div>
+                                        <div>
+                                            Oval
+                                        </div>
+                                        <div>
+                                            <span class="badge rounded-pill text-bg-light">Light</span>
+                                        </div>
+                                        <div>
+                                            120/80 mmHg
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <!-- third box  -->
+                        <div class="card w-100 m-1" style="">
+                            <div class="card-body ">
+                                <div class="w-100 d-flex  ">
+                                    <div class="w-50">
+                                        <h5 class="card-title">Weight Graph</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">-18 k.g</h6>
+                                    </div>
+                                    <div>
+                                        <div class="col-auto">
+                                            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                            <select class="form-select" id="autoSizingSelect">
+                                                <option selected>Choose...</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100">
+                                    <img src="Image/graph-1.jpeg" class="card-img-bottom" alt="...">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
